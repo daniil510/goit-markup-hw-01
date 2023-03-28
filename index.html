@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>WebStudio</title>
 </head>
 <body>
     <header>
         <nav>
-          <a href="/">
-            <h1>WebStudio</h1>
+          <a href="index.html">
+            <h1 class="logo"><span class="logo-accent">Web</span>Studio</h1>
           </a>
           
-          <ul>
-            <li><a href="/"></a>Студия</li>
-            <li><a href="/"></a>Портфолио</li>
-            <li><a href="/"></a>Контакты</li>
+          <ul class="navigation">
+            <li><a href="/" class="link current">Студия</a></li>
+            <li><a href="/" class="link">Портфолио</a></li>
+            <li><a href="/" class="link">Контакты</a></li>
           </ul>
         </nav> 
-          <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <ul class="contacts">
+            <li><a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
           </ul>   
     </header>
 
-    <section>
+    <section class="hero">
         <div>
-            <h1>Эффективные решения для вашего бизнеса</h1>
-            <a href="/" type="button">Заказать услугу</a>
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero-button">Заказать услугу</button>
         </div>
     </section>
 
     <section>
-        <ul>
+        <ul class="specials">
             <li>
                 <h2>Внимание к деталям</h2>
                 <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -54,7 +59,7 @@
     </section>
 
     <section>
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="about-our-job">Чем мы занимаемся</h2>
         <ul>
             <li><img src="images/img.jpg" alt="Верстка сайтов" width="370"></li>
             <li><img src="images/img1.jpg" alt="Мобильніе приложения" width="370"></li>
@@ -62,9 +67,9 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Наша команда</h2>
-        <ul>
+    <section class="our-team">
+        <h2 class="our-team-title">Наша команда</h2>
+        <ul class="team-members">
             <li>
                 <img src="images/img3.jpg" alt="Игорь Демьяненко, Product Designer" width="270">
                 <h3>Игорь Демьяненко</h3>
@@ -89,21 +94,21 @@
     </section>
 
     <footer>
-        <h2>WebStudio</h2>
+        <a href="index.html"><h2 class="logo footer"><span class="logo-accent">Web</span>Studio</h2></a>
         <address>
             <ul>
                 <li>
-                    <a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">
+                    <a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer" class="link-footer addr">
                         г. Киев, пр-т Леси Украинки, 26
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:info@example.com" rel="norefer">
+                    <a href="mailto:info@example.com" rel="norefer" class="link-footer">
                         info@example.com
                     </a>
                 </li>
                 <li>
-                    <a href="tel:+380991111111">
+                    <a href="tel:+380991111111" class="link-footer">
                         +38 099 111 11 11
                     </a>
                 </li>
